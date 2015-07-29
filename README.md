@@ -53,6 +53,9 @@ Screenshots
 
 ![](protobuf-npp.png)
 
+![](protobuf-npp-grpc-route-guide.png)
+
+
 BUGS
 ----
 
