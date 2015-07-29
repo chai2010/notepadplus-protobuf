@@ -1,0 +1,25 @@
+<!-- <NotepadPlus> -->
+	<!-- <functionList> -->
+		<!-- <associationMap> -->
+
+		<!--
+			<association userDefinedLangName="protobuf" id="protobuf"/>
+		-->
+
+		<!-- </associationMap> -->
+		<!-- <parsers> -->
+			<parser id="protobuf" displayName="protobuf" commentExpr="((/\*.*?\*)/|(//.*?$))">
+				<function
+					mainExpr="^message\s+\w+"
+					displayMode="$className->$functionName">
+					<functionName>
+						<nameExpr expr="message\s+\w+"/>
+						<nameExpr expr="\s+\w+"/>
+						<nameExpr expr="\w+"/>
+					</functionName>
+				</function>
+			</parser>
+
+		<!-- </parsers> -->
+	<!-- </functionList> -->
+<!-- </NotepadPlus> -->
