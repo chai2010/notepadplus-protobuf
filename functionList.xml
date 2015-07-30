@@ -27,7 +27,7 @@
 					</function>
 				</classRange>
 				<function
-					mainExpr="(^message\s+((\w)|(\.))+)|(^extend\s+((\w)|(\.))+)"
+					mainExpr="(^message\s+\w+)|(^enum\s+\w+)|(^extend\s+((\w)|(\.))+)"
 					displayMode="$className->$functionName">
 					<functionName>
 						<nameExpr expr="\s+((\w)|(\.))+"/>
