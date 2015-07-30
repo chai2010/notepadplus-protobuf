@@ -27,12 +27,11 @@
 					</function>
 				</classRange>
 				<function
-					mainExpr="^message\s+\w+"
+					mainExpr="(^message\s+((\w)|(\.))+)|(^extend\s+((\w)|(\.))+)"
 					displayMode="$className->$functionName">
 					<functionName>
-						<nameExpr expr="message\s+\w+"/>
-						<nameExpr expr="\s+\w+"/>
-						<nameExpr expr="\w+"/>
+						<nameExpr expr="\s+((\w)|(\.))+"/>
+						<nameExpr expr="((\w)|(\.))+"/>
 					</functionName>
 				</function>
 			</parser>
