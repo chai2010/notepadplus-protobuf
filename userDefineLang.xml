@@ -27,7 +27,7 @@
             <Keywords name="Keywords1">syntax option package import</Keywords>
             <Keywords name="Keywords2">message enum extend service</Keywords>
             <Keywords name="Keywords3">repeated optional required oneof extensions rpc returns stream</Keywords>
-            <Keywords name="Keywords4">bool float double int uint string bytes map</Keywords>
+            <Keywords name="Keywords4">bool float double string bytes map</Keywords>
             <Keywords name="Keywords5">int32 int64 sint32 sint64 uint32 uint64 fixed32 fixed64 sfixed32 sfixed64</Keywords>
             <Keywords name="Keywords6">default packed deprecated</Keywords>
             <Keywords name="Keywords7">true false</Keywords>
