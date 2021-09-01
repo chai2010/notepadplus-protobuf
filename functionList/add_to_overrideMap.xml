@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <NotepadPlus> -->
+<!--	<functionList> -->
+<!--		<associationMap> -->
+			<!-- ==================== User Defined Languages ============================ -->
+			<association id= "protobuf.xml"			userDefinedLangName="protobuf"/>
+			<!-- ======================================================================== -->
+<!--		</associationMap> -->
+<!--	</functionList> -->
+<!--</NotepadPlus> -->
