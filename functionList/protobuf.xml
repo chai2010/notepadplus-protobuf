@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+	<functionList>
+		<parser id="protobuf" displayName="protobuf" commentExpr="((/\*.*?\*)/|(//.*?$))">
+			<classRange
+				mainExpr="^service\s+\w+\s*{"
+				openSymbole = "\{"
+				closeSymbole = "\}"
+				displayMode="node">
+				<className>
+					<nameExpr expr="service\s+\w+"/>
+					<nameExpr expr="\s+\w+"/>
+					<nameExpr expr="\w+"/>
+				</className>
+				<function
+					mainExpr="^\s*rpc\s+\w+\s*\(">
+					<functionName>
+						<funcNameExpr expr="rpc\s+\w+"/>
+						<funcNameExpr expr="\s+\w+"/>
+						<funcNameExpr expr="\w+"/>
+					</functionName>
+				</function>
+			</classRange>
+			<function
+				mainExpr="(^message\s+\w+)|(^enum\s+\w+)|(^extend\s+((\w)|(\.))+)"
+				displayMode="$className->$functionName">
+				<functionName>
+					<nameExpr expr="\s+((\w)|(\.))+"/>
+					<nameExpr expr="((\w)|(\.))+"/>
+				</functionName>
+			</function>
+		</parser>
+	</functionList>
+</NotepadPlus>
